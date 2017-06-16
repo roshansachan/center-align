@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Center align</title>
+
+
+    <style>
+
+
+        .method-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .method-1 .centered-box{
+            width: 200px;
+            height:200px;
+            background-color: aquamarine;
+        }
+
+        .method-2{
+            position: relative;
+        }
+
+        .method-2 .centered-box{
+
+            width: 200px;
+            height:200px;
+            background-color: aquamarine;
+
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -100px;
+            margin-top: -100px;
+
+        }
+        .method-3 .centered-box{
+
+            width: 200px;
+            height:200px;
+            background-color: aquamarine;
+
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%);
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+<div class="method-1" >
+    <div class="centered-box" >
+
+    </div>
+</div>
+
+<div class="method-2" >
+    <div class="centered-box" >
+
+    </div>
+</div></div>
+
+<div class="method-3" >
+    <div class="centered-box" >
+
+    </div>
+</div>
+
+
+</body>
+</html>
